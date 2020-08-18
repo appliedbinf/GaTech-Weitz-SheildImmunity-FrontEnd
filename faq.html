@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Georgia Tech - Shield Immunity</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/icon.png">
+<style>
+.accordion .card-header:after {
+	font-family: 'FontAwesome';
+	content: "\f068";
+	float: right;
+}
+.accordion .card-header.collapsed:after {
+	/* symbol for "collapsed" panels */
+	content: "\f067";
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light col-xl-12"> <a class="navbar-brand m-4 pl-4 h-50" href="index.html"><img src="images/navbar.png" class="img-fluid" alt="Shield Immunity"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"> <a class="nav-link px-4 align-middle" href="about.html">About</a></li>
+      <li class="nav-item"> <a class="nav-link px-4 align-middle text-center" href="models.html">Dynamic<br>
+        Models</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="maps.html">Maps</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="resources.html">Resources</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="press.html">Press</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="team.html">Our Team</a> </li>
+      <li class="nav-item active font-weight-bold"> <a class="nav-link px-4" href="faq.html">FAQ</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="contact.html">Contact Us</a> </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    </form>
+  </div>
+</nav>
+<header>
+  <div class="jumbotron" style="background-color: #808080">
+    <div class="container my-4 shadow-sm p-3 bg-white rounded">
+      <div class="row pb-2">
+        <div class="col-12 ">
+          <h2 class="text-left mx-3 mt-5 font-weight-bold">Frequently Asked Questions</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="container">
+            <div id="accordion" class="accordion">
+              <div class="card mb-0">
+                <div class="card-header collapse show" data-toggle="collapse" href="#collapse1"> <a class="card-title">What is shield immunity?</a> </div>
+                <div id="collapse1" class="card-body collapse show" data-parent="#accordion">
+                  <p>Shield immunity occurs when individuals who are immune are identified as immune are responsible for more interactions than susceptible individuals.  Shield immunity tends to reduce interactions between susceptible and infectious people, thereby decreasing the rate of ongoing transmission.</p>
+                </div>
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2"> <a class="card-title">What is the difference between shield immunity and herd immunity?</a> </div>
+                <div id="collapse2" class="card-body collapse" data-parent="#accordion">
+                  <p>Herd immunity occurs when a sufficient fraction of the population has acquired immunity to a pathogen, such that transmission would be expected to slow down even if interactions proceeded as normal.  In contrast, shield immunity involves changing the frequency of interactions between susceptible and infectious individuals preferentially by immune status.  Therefore, shield immunity allows for similar benefits to herd immunity even when only a small fraction of the population has been infected.</p>
+                </div>
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3"> <a class="card-title">How long does immunity last?</a> </div>
+                <div id="collapse3" class="collapse" data-parent="#accordion">
+                  <div class="card-body">At present, the duration of immunity is unknown for COVID-19.  Other coronaviruses have immunity of variable duration, with some coronaviruses that cause the common cold having relatively short immunity whereas other coronaviruses, such as the virus that caused the 2009 SARS outbreak, resulting in immunity for up to 3 years. </div>
+                </div>
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4"> <a class="card-title">Can someone who has been infected once with Covid-19 be re-infected?</a> </div>
+                <div id="collapse4" class="collapse" data-parent="#accordion">
+                  <div class="card-body">At present, there are no credible reports of reinfection with Covid-19. Early reports showed that individuals who had apparently recovered from Covid-19 had tested positive for the virus, which raised concerns that it was possible to be re-infected. However, evidence suggests that even if virus can be detected after recovery from illness, such viruses are not able to infect and cause disease in others. Recent studies on the immune response to coronavirus infection have shown that <a href="https://www.medrxiv.org/content/10.1101/2020.03.30.20047365v1.full.pdf" target="_blank">most people who have recovered from Covid-19 have ‘neutralizing’ antibodies</a> that prevent the virus from entering human cells, making it likely that people are protected from repeated infections. </div>
+                </div>
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5"> <a class="card-title">How accurate are serological tests?</a> </div>
+                <div id="collapse5" class="collapse" data-parent="#accordion">
+                  <div class="card-body">The overall accuracy of serological tests depends on the prevalence of infection in the population.  Current prevalence in the United States is unknown and most likely varies geographically, but many large-scale surveys are attempting to answer this question. <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/commercial-lab-surveys.html" target="_blank">Preliminary data</a> from six locations across the US suggests a true seroprevalence of 1-7% as of April 2020. Based on the best-performing currently approved assays and assuming a prevalence of 5%, scientists estimate that 84-100% of individuals who test positive for antibodies for COVID-19 are truly immune (the positive predictive value, PPV) and 99-100% of individuals who test negative for antibodies for COVID-19 are truly susceptible (negative predictive value, NPV) at the time of testing.  If seroprevalence is higher, test results would be more accurate overall. </div>
+                </div>
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6"> <a class="card-title">Where can I get more information on the accuracy of serological tests?</a> </div>
+                <div id="collapse6" class="collapse" data-parent="#accordion">
+                  <div class="card-body">The <a href="https://www.fda.gov/medical-devices/emergency-situations-medical-devices/eua-authorized-serology-test-performance" target="_blank">FDA website</a> provides updated information on the accuracy of currently approved serological tests. </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Developed by <a href="https://ecotheory.biosci.gatech.edu/" class="text-info" target="_blank">Weitz Group</a> @ <a href="https://www.gatech.edu" class="text-info" target="_blank">Georgia Institute of Technology</a> and <a href="https://abil.ihrc.com" class="text-info" target="_blank">the Applied Bioinformatics Laboratory</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
