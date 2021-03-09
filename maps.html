@@ -10,18 +10,16 @@
 <link rel="icon" type="image/png" href="images/icon.png">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light col-xl-12"> <a class="navbar-brand m-4 pl-4 h-50" href="index.html"><img src="images/navbar.png" class="img-fluid" alt="Shield Immunity"></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light col-xl-12"> <a class="navbar-brand m-4 pl-4 h-50" href="index.html"><img src="images/logo.png" class="img-fluid" alt="Covid-19 Shield Immunity" style="max-height: 75px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto text-center">
-      <li class="nav-item"> <a class="nav-link px-4 align-middle" href="about.html">About</a></li>
-      <li class="nav-item"> <a class="nav-link px-4 align-middle" href="models.html">Dynamic<br>
-        Models</a> </li>
       <li class="nav-item active font-weight-bold"> <a class="nav-link px-4" href="maps.html">Maps</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="models.html">Models</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="faq.html">FAQ</a> </li>
       <li class="nav-item"> <a class="nav-link px-4" href="resources.html">Resources</a> </li>
       <li class="nav-item"> <a class="nav-link px-4" href="press.html">Press</a> </li>
       <li class="nav-item"> <a class="nav-link px-4" href="team.html">Our Team</a> </li>
-      <li class="nav-item"> <a class="nav-link px-4" href="faq.html">FAQ</a> </li>
       <li class="nav-item"> <a class="nav-link px-4" href="contact.html">Contact Us</a> </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -29,25 +27,29 @@
   </div>
 </nav>
 <header>
-  <div class="jumbotron" style="background-color: #808080">
+  <div class="jumbotron embed-responsive" style="background-color: #E3DCCA">
     <div class="container my-4">
       <div class="row p-3">
         <div class="col-lg-1"></div>
-		  <div class="col-lg-4 col-sm-12 btn-group"><a class="btn btn-default btn-block rounded-pill text-center bg-dark text-light font-weight-bold p-2 align-middle" href="maps.html">COVID19 Recovery Estimates by County</a></div>
+        <div class="col-lg-4 col-sm-12 btn-group"><a class="btn btn-default btn-block rounded-pill text-center bg-dark text-light font-weight-bold p-2 align-middle" href="maps.html">Covid-19 Recovery Estimates by County</a></div>
         <!--<div class="col-4 rounded-pill text-center bg-dark font-weight-bolder text-light p-2 align-middle"><a href="maps.html">COVID19 Recovery Estimates by County</a></div>-->
         <div class="col-lg-2">&nbsp;</div>
-		  <!-- 
+        <!-- 
 <div class="col-4 rounded-pill text-center bg-light font-weight-bolder p-2 align-middle">Shield Immunity Index</div>
 -->
-		  <div class="col-lg-4 col-sm-12 btn-group"><a class="btn btn-default btn-block rounded-pill text-center bg-light font-weight-bold p-2 align-middle" href="maps-si-index.html">Shield Immunity Index</a></div>
+        <div class="col-lg-4 col-sm-12 btn-group"><a class="btn btn-default btn-block rounded-pill text-center bg-light font-weight-bold p-2 align-middle" href="maps-si-index.html">Shield Immunity Index - Expert View</a></div>
         <div class="col-lg-1"></div>
       </div>
-      <div class="row shadow-sm p-3 bg-white rounded">
+      <div class="row shadow-sm bg-white rounded">
         <div class="col-12">
-          <h2 class="text-left mx-3 mt-5 font-weight-bold">COVID19 Recovery Estimates by County</h2>
-			<p>&nbsp;</p>
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src="https://weitz.appliedbinf.com/GaTech-Weitz-SheildImmunity/shield"></iframe>
+          <h2 class="text-left mx-3 mt-5 font-weight-bold">Covid-19 Recovery Estimates by County</h2>
+          <p class="ml-3 mr-3"><b>Description:</b> The estimated number of recovered individuals is calculated by using the total number of cases, not including the past two weeks of cases, multiplied by an <a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Ascertainment bias:</b><br />correction for likelihood that some members of the population were not included in the collected population data."><b>ascertainment bias</b></a> (options include 3x, 5x).  This value, which varies by county, is the basis for a county-level estimate of recovered individuals. The recovery index represents the percentage of recovered individuals. Note that vaccination of individuals will increase the number of protected individuals in a community. We are working to include these estimates in a future update.</p>
+          <p>&nbsp;</p>
+          <div class="embed-responsive embed-responsive-4by3" style="height: auto; overflow:auto;" id="wrapper">
+            <style>
+iframe{width:100%}
+</style>
+            <iframe id="interactionmodel" class="embed-responsive-item" src="https://weitz.appliedbinf.com/GaTech-Weitz-SheildImmunity/recovery_index/" frameborder="0" onload="iFrameResize({log:true, resizedCallback: function(messageData){document.getElementById('wrapper').setAttribute('style','height:'+messageData.height+'px');}, })"></iframe>
           </div>
         </div>
       </div>
@@ -67,6 +69,12 @@
 <script src="js/jquery-3.4.1.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
-<script src="js/bootstrap-4.4.1.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script> 
+<script type="text/javascript" src="js/iframeResizer.min.js"></script> 
+<script>
+	$(document).ready(function(){
+	  $('[data-toggle="tooltip"]').tooltip();   
+	});
+	</script>
 </body>
 </html>

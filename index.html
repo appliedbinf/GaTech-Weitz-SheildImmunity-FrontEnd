@@ -1,65 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Georgia Tech - Shield Immunity</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	  <link rel="icon" type="image/png" href="images/icon.png">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light col-xl-12">
-      <a class="navbar-brand m-4 pl-4 h-50" href="index.html"><img src="images/navbar.png" class="img-fluid" alt="Shield Immunity"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-			<li class="nav-item"> <a class="nav-link px-4 align-middle" href="about.html">About</a></li>
-		  <li class="nav-item"> <a class="nav-link px-4 align-middle" href="models.html">Dynamic<br>Models</a> </li>
-		  <li class="nav-item"> <a class="nav-link px-4" href="maps.html">Maps</a> </li>
-		  <li class="nav-item"> <a class="nav-link px-4" href="resources.html">Resources</a> </li>
-		  <li class="nav-item"> <a class="nav-link px-4" href="press.html">Press</a> </li>
-		  <li class="nav-item"> <a class="nav-link px-4" href="team.html">Our Team</a> </li>
-          <li class="nav-item"> <a class="nav-link px-4" href="faq.html">FAQ</a> </li>
-		  <li class="nav-item"> <a class="nav-link px-4" href="contact.html">Contact Us</a> </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-</form>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Georgia Tech - COVID-19 Shield Immunity</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/icon.png">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+.accordion .card-header:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: right;
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067";
+}
+#module {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#module #collapseExample.collapse:not(.show) {
+    display: block;
+    height: 3rem;
+    overflow: hidden;
+}
+#module #collapseExample.collapsing {
+    height: 3rem;
+}
+#module a.collapsed::after {
+    content: '+ Read More';
+}
+#module a:not(.collapsed)::after {
+    content: '- Read Less';
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light col-xl-12"> <a class="navbar-brand m-4 pl-4 h-50" href="index.html"><img src="images/logo.png" class="img-fluid" alt="Covid-19 Shield Immunity" style="max-height: 75px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-center">
+      <li class="nav-item"> <a class="nav-link px-4" href="maps.html">Maps</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="models.html">Models</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="faq.html">FAQ</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="resources.html">Resources</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="press.html">Press</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="team.html">Our Team</a> </li>
+      <li class="nav-item"> <a class="nav-link px-4" href="contact.html">Contact Us</a> </li>
+    </ul>
+  </div>
+</nav>
+<header>
+  <div class="jumbotron" style="background-color: #E3DCCA">
+    <div class="container my-4 shadow-sm p-3 bg-white rounded">
+      <div class="row pb-2">
+        <div class="col-12 ">
+          <h2 class="text-left mx-3 mt-5 font-weight-bold">How Shield Immunity Can Reduce Pandemic Intensity</h2>
+          <br/>
+        </div>
       </div>
-    </nav>
-    <header>
-      <div class="jumbotron" style="background-color: #808080">
-        <div class="container my-4">
-          <div class="row">
-            <div class="col-md-4 col-sm-12 col-lg-4 shadow-sm p-3 bg-white rounded">
-              <h2 class="text-left mx-3 mt-5 font-weight-bold">Welcome to Shield Immunity</h2>
-				<p>&nbsp;</p>
-              <p class="text-left mx-3"><a href="models.html" style="text-decoration: underline;" class="text-info">Access interactive models</a></p>
-			  <p class="text-left mx-3"><a href="maps.html" style="text-decoration: underline;" class="text-info">Access interactive maps</a></p>
-			  <p class="text-left mx-3"><a href="about.html" style="text-decoration: underline;" class="text-info">Read about the science behind</a></p>
-              <p>&nbsp;</p>
+      <div class="row d-flex flex-wrap align-items-start">
+        <div class="col-lg-6 col-sm-12 mx-3">
+          <p class="text-justify"  style="width: 95%"><a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Mitigation:</b><br />strategies to slow the spread of an infectious agent by nonpharmaceutical interventions (e.g., improved hygiene, short-term school and business closures, travel restrictions, and social distancing) to reduce the burden on healthcare facilities and protect vulnerable populations."><b>Mitigation</b></a> (e.g. mask wearing) and <a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Suppression:</b><br />long-term or indefinite strategies to reverse epidemic growth and end the spread of an infectious agent by nonpharmaceutical interventions (e.g., extreme social distancing, closures and quarantine of an entire population)."><b>suppression</b></a> (e.g. lockdowns) have emerged as the primary strategies to control and contain the spread of Covid-19. Both strategies focus on reducing the number of new infections by minimizing contact between potentially infected and <a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Susceptible:</b><br />at risk of acquiring an infection."><b>susceptible</b></a> individuals. Yet, these tactics raise questions of sustainability as long-term strategies given social and economic consequences.<br>
+            <br>
+            Most interventions focus on the reduction of new viral transmission by reducing contact with others, but don't account for contact with individuals who have already been sick and recovered. <a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Shield immunity:</b><br />an epidemiological intervention strategy that relies on the immunity of recovered individuals to protect susceptible individuals from infection."><b>Shield immunity</b></a> leverages previously infected individuals at critical contact points. It is based on the assumption that recovered individuals (and/or individuals who have been vaccinated) have <a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Immunity:</b><br />the ability to resist infection by production of antibodies against a particular invader (e.g., virus, bacteria, pathogen). The length of immunity can differ between individuals and infectious agents and depends on several variables."><b>immunity</b></a> and are protected from re-infection that could lead to transmission. Now, with increased vaccine distribution, there is a chance to leverage population-wide immunity to reduce onward transmission.<br>
+            <br>
+          </p>
+        </div>
+        <div class="col-lg-5 col-sm-12"> <img src="images/ShieldImmunityFigure.png" class="img-fluid" alt="Shield Immunity model">
+          <p></p>
+          <div id="module" class="container">
+            <p class="text-justify"> <small><b>Population dynamics:</b> In a population of susceptible, infectious, and recovered individuals, we can decrease the spread  of infection by reducing contact between infectious and susceptible individuals with interaction substitution. With this method, interactions between potentially infectious individuals are replaced with recovered/antibody positive individuals at critical contact points (e.g., an antibody positive healthcare worker would interact with infectious patients as opposed to a susceptible healthcare worker). Black arrows denote flow of infection status. Red arrow signifies viral transmission and green line denotes protection (shielding) from transmission by an intervention using a recovered individual.</small> </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-12">
+          <div class="container">
+            <div id="accordion" class="accordion">
+              <div class="card mb-0">
+                <div class="card-header collapsed" data-toggle="collapse" href="#collapse1"> <a class="card-title">Proof of Principle Modeling</a> </div>
+                <div id="collapse1" class="card-body collapse" data-parent="#accordion">
+                  <p>In a 2020 <a href="https://www.nature.com/articles/s41591-020-0895-3" class="text-info" target="_blank">Nature Medicine</a> paper, the Weitz group led efforts to develop an <a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Epidemiological intervention model:</b><br />mathematical prediction of infection rates using available data and chosen variables to help inform epidemiological policy decisions.">epidemiological intervention model</a> that leverages <a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Serological tests:</b><br />blood tests specific for antibodies against a particular infectious agent. A positive test indicates a person has been exposed to the microorganism and has immunity.">serological tests</a> to identify and deploy recovered individuals who have developed protective <a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Antibodies:</b><br />proteins produced by the immune system to protect against reinfection by an invader (e.g., virus, bacteria, pathogens).">antibodies</a> to SARS-CoV-2. In this model, antibody-positive individuals serve as focal points for sustaining safer interactions via <a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Interaction substitution:</b><br />the act of replacing a susceptible individual for a recovered individual at crticial contact points with other susceptible or infectious individuals to prevent spread of an infectious agent. This relies on the recovered individual maintaining immunity against the infection.">interaction substitution</a>. 
+                    The objective of this intervention is to develop sufficient 'shield immunity' at the population scale to reduce epidemic intensity. Shield immunity works by increasing interactions with recovered individuals relative to individuals of unknown or susceptible status. Shield immunity can be utilized with social distancing measures, potentially enabling the same levels of infection reduction at the population scale with reduced economic and social costs of social distancing.</p>
+                </div>
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2"> <a class="card-title">The Impact of Imperfect Tests</a> </div>
+                <div id="collapse2" class="card-body collapse" data-parent="#accordion">
+                  <p>Despite the promise of shield immunity, there is a practical concern. How robust is the approach to variation in the specificity and sensitivity of antibody tests?  In an ongoing collaboration, the Weitz and Lopman groups have evaluated the impact of the specificity and test capacity on both the reduction in disease transmission and the increase in the number of individuals who can safely return to work. As we show, highly specific tests (e.g., with upwards of 99% specificity) can reduce transmission while increasing the extent to which test status can help inform safer return to work policies. More information is available on our <a href="https://www.medrxiv.org/content/10.1101/2020.04.24.20078576v3" class="text-info" target="_blank">preprint</a>.</p>
+                </div>
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3"> <a class="card-title">Healthcare Facilities</a> </div>
+                <div id="collapse3" class="card-body collapse" data-parent="#accordion">
+                  <p>We are currently working on new approaches to adapt shield immunity to healthcare settings. The key idea is to leverage serological tests and/or vaccinations to develop data- and epidemic-driven restaffing models to reduce risk of infection.  Check back soon for more details. </p>
+                </div>
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4"> <a class="card-title">Moving Forward</a> </div>
+                <div id="collapse4" class="card-body collapse" data-parent="#accordion">
+                  <p>While there are significant challenges to developing and implementing interventions that aim to build population-scale shield immunity, the magnitude of the current public health and economic crisis demands action, including new approaches to reopen schools and businesses. Our collaborative team continues to explore ways to assess the feasibility of shield immunity where recovered individuals may play a critical, active role in reducing the risk for others, alongside other measures including masks, social distancing, and test/tracing initiatives.</p>
+                </div>
+              </div>
             </div>
-			  <div class="col-1"></div>
-		    <div class="col-md-7 col-lg-7 col-sm-12 shadow-sm p-3 bg-white rounded"><img src="images/shield_model.png" width="100%"></div>
           </div>
         </div>
       </div>
-    </header>
-    
-    <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Developed by <a href="https://ecotheory.biosci.gatech.edu/" class="text-info" target="_blank">Weitz Group</a> @ <a href="https://www.gatech.edu" class="text-info" target="_blank">Georgia Institute of Technology</a> and <a href="https://abil.ihrc.com" class="text-info" target="_blank">the Applied Bioinformatics Laboratory</a>.</p>
-          </div>
-        </div>
+      <br />
+    </div>
+  </div>
+</header>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Developed by <a href="https://ecotheory.biosci.gatech.edu/" class="text-info" target="_blank">Weitz Group</a> @ <a href="https://www.gatech.edu" class="text-info" target="_blank">Georgia Institute of Technology</a> and <a href="https://abil.ihrc.com" class="text-info" target="_blank">the Applied Bioinformatics Laboratory</a>.</p>
       </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-    <script src="js/jquery-3.4.1.min.js"></script> 
-    <!-- Include all compiled plugins (below), or include individual files as needed --> 
-    <script src="js/popper.min.js"></script> 
-    <script src="js/bootstrap-4.4.1.js"></script>
-  </body>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script> 
+<script>
+	$(document).ready(function(){
+	  $('[data-toggle="tooltip"]').tooltip();   
+	});
+	
+	</script>
+</body>
 </html>
