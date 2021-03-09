@@ -1,0 +1,3 @@
+[submodule "GaTech-Weitz-ShieldImmunity"]
+	path = GaTech-Weitz-ShieldImmunity
+	url = git@github.com:appliedbinf/GaTech-Weitz-ShieldImmunity.git
